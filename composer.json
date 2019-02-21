@@ -1,0 +1,34 @@
+{
+    "name": "weiwait/array-append",
+    "description": "Js Array for laravel-admin-form-extension",
+    "type": "library",
+    "keywords": ["laravel-admin", "extension"],
+    "homepage": "https://github.com/weiwait/array-append",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "weiwait",
+            "email": "lijingwei.weiwait@foxmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "~1.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Encore\\ArrayAppend\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Encore\\ArrayAppend\\ArrayAppendServiceProvider"
+            ]
+
+        }
+    }
+}
